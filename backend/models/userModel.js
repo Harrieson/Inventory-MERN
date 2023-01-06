@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose")
 
 const userSchema = mongoose.Schema({
     name: {
@@ -21,13 +21,12 @@ const userSchema = mongoose.Schema({
     },
     photo: {
         type: String,
-        required: [true, "Please select an image to upload"],
+        // required: [true, "Please select an image to upload"],
         default: ""
     },
     phone: {
         type: String,
-        required: [true, "Please add a valid phone number"],
-        minLength: [10]
+        default: "254"
     },
     bio: {
         type: String,
