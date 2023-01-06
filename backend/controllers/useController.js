@@ -1,10 +1,9 @@
-const registerUser = (req, res) => {
+const registerUser = async(req, res) => {
+    try {
 
-    if (!req.body.email) {
-        res.status(400);
-        throw new Error("Please add an email")
+    } catch (error) {
+
     }
-    res.send("Register User")
 }
 
 
